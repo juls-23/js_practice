@@ -89,10 +89,14 @@ function MyArrayProto(){
     const reverseArr = new MyArray;
     let lenth = this.length;
 
-    for(i=0; i<this.length; i++){
+    for(let i=0; i<this.length; i++){
       reverseArr.push(this[--lenth])
+      this[i] = reverseArr[i];
     } 
-    return reverseArr;
+    
+    
+    return  reverseArr;
+    
   }
 
   this.concat = function(arr){
