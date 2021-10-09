@@ -91,10 +91,12 @@ function MyArrayProto(){
 
     for(let i=0; i<this.length; i++){
       reverseArr.push(this[--lenth])
-      this[i] = reverseArr[i];
+      
     } 
-    
-    
+    for(let i=0; i<this.length; i++){
+      this[i] = reverseArr[i]
+    }
+      
     return  reverseArr;
     
   }
@@ -122,17 +124,17 @@ const myArray = new MyArray(2,4,5,8);
 const arrNew = [2,3,4,7,5,4,9];
 
 
-console.log(myArray)
-console.log(myArray.map(mult));
-console.log(myArray.reverse())
-console.log(myArray.shift())
-console.log(myArray.unshift(4,5,6,7))
-const newNew = myArray.concat(arrNew);
-console.log(newNew)
+// console.log(myArray)
+// console.log(myArray.map(mult));
+// console.log(myArray.reverse())
+// console.log(myArray.shift())
+// console.log(myArray.unshift(4,5,6,7))
+// const newNew = myArray.concat(arrNew);
+// console.log(newNew)
 
-function mult(n) {
-  return n*2
-}
+// function mult(n) {
+//   return n*2
+// }
 
 
 
