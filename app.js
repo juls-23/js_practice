@@ -97,7 +97,7 @@ function MyArrayProto(){
       this[i] = reverseArr[i]
     }
       
-    return  reverseArr;
+    return  this;
     
   }
 
